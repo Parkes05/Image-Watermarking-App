@@ -34,10 +34,6 @@ def save():
     y = canvas1.winfo_rooty() + 25
     x1 = x + canvas1.winfo_width() + 140
     y1 = y + canvas1.winfo_height() + 120
-    print(x)
-    print(y)
-    print(x1)
-    print(y1)
     snapshot = ImageGrab.grab((x, y, x1, y1))
     snapshot.save('new_img.png')
 
